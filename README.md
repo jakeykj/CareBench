@@ -1,9 +1,7 @@
-# CareBench: A Comprehensive Benchmark for Accuracy, Robustness, and Fairness in Multimodal Fusion of EHR and Chest X-Rays
+# When Does Multimodal Learning Help in Healthcare? A Benchmark on EHR and Chest X-Ray Fusion (CareBench)
 
 ## Abstract
-Machine learning holds promise for advancing clinical decision support, yet it remains unclear when multimodal learning truly helps in practice, particularly under modality missingness and fairness constraints. In this work, we conduct a systematic benchmark of multimodal fusion between Electronic Health Records (EHR) and chest X-rays (CXR) on standardized cohorts from MIMIC-IV and MIMIC-CXR, aiming to answer four fundamental questions: when multimodal fusion improves clinical prediction, how different fusion strategies compare, how robust existing methods are to missing modalities, and whether multimodal models achieve algorithmic fairness. 
-Our study reveals several key insights. Multimodal fusion improves performance when modalities are complete, with gains concentrating in diseases that require complementary information from both EHR and CXR. While cross-modal learning mechanisms capture clinically meaningful dependencies beyond simple concatenation, the rich temporal structure of EHR introduces strong modality imbalance that architectural complexity alone cannot overcome. Under realistic missingness, multimodal benefits rapidly degrade unless models are explicitly designed to handle incomplete inputs. Moreover, multimodal fusion does not inherently improve fairness, with subgroup disparities mainly arising from unequal sensitivity across demographic groups. 
-To support reproducible and extensible evaluation, we further release a flexible benchmarking toolkit that enables plug-and-play integration of new models and datasets. Together, this work provides actionable guidance on when multimodal learning helps, when it fails, and why, laying the foundation for developing clinically deployable multimodal systems that are both effective and reliable. 
+Machine learning holds promise for advancing clinical decision support, yet it remains unclear when multimodal learning truly helps in practice, particularly under modality missingness and fairness constraints. In this work, we conduct a systematic benchmark of multimodal fusion between Electronic Health Records (EHR) and chest X-rays (CXR) on standardized cohorts from MIMIC-IV and MIMIC-CXR, aiming to answer four fundamental questions: when multimodal fusion improves clinical prediction, how different fusion strategies compare, how robust existing methods are to missing modalities, and whether multimodal models achieve algorithmic fairness. Our study reveals several key insights. Multimodal fusion improves performance when modalities are complete, with gains concentrating in diseases that require complementary information from both EHR and CXR. While cross-modal learning mechanisms capture clinically meaningful dependencies beyond simple concatenation, the rich temporal structure of EHR introduces a strong modality imbalance that architectural complexity alone cannot overcome. Under realistic missingness, multimodal benefits rapidly degrade unless models are explicitly designed to handle incomplete inputs. Moreover, multimodal fusion does not inherently improve fairness, with subgroup disparities mainly arising from unequal sensitivity across demographic groups. To support reproducible and extensible evaluation, we further release a flexible benchmarking toolkit that enables plug-and-play integration of new models and datasets. Together, this work provides actionable guidance on when multimodal learning helps, when it fails, and why, laying the foundation for developing clinically deployable multimodal systems that are both effective and reliable.
 
 ![CareBench Pipeline](assets/pipeline.png)
 
@@ -478,10 +476,10 @@ For more examples, see `models/drfuse/drfuse.py`.
 If you use CareBench in your research, please cite:
 
 ```bibtex
-@article{carebench2026,
-  title={CareBench: A Multimodal Clinical Prediction Benchmark},
-  author={Your Name},
-  journal={arXiv preprint},
+@article{yin2026carebench,
+  title={When Does Multimodal Learning Help in Healthcare? A Benchmark on EHR and Chest X-Ray Fusion},
+  author={Yin, Kejing and Xu, Haizhou and Yao, Wenfang and Liu, Chen and Chen, Zijie and Cheung, Yui Haang and Cheung, William K and Qin, Jing},
+  journal={arXiv preprint arXiv:2602.23614},
   year={2026}
 }
 ```
