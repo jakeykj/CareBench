@@ -23,9 +23,6 @@ ENV/
 # MacOS
 .DS_Store
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
 
 # Data (if large)
 data/

@@ -16,7 +16,7 @@ from torchvision.models import resnet50
 from ..base.base_encoder import create_ehr_encoder, create_cxr_encoder
 
 
-class  Outer(nn.Module):
+class Outer(nn.Module):
     def __init__(self,
                  inp1_size: int = 128,
                  inp2_size: int = 128,

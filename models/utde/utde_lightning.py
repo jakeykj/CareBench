@@ -94,7 +94,7 @@ class UTDE(BaseFuseTrainer):
         y = batch['labels'].squeeze(-1)
         
         
-        # Forward pass through HealNet
+        # Forward pass 
         pred = self.model(reg_ts,last_cxr,last_cxr_time)
         
         # For mortality task, ensure output shape matches labels
